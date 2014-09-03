@@ -1,0 +1,201 @@
+/* ================================================================================
+
+				                # FONTS
+
+================================================================================ */
+/* ================================================================================
+
+								 # BASE
+
+================================================================================ */
+/* -------------------------------------- DISPLAY LIST -- */
+header,
+section,
+footer,
+aside,
+nav,
+main,
+article,
+figure {
+  display: block;
+}
+
+/* -------------------------------------- LINKS AND BUTTONS -- */
+/*** Default anchor ***/
+.content-link {
+  cursor: pointer;
+  color: white;
+  text-decoration: underline;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.content-link:hover, .content-link:focus {
+  color: #cccccc;
+}
+
+/*** Button focus ***/
+button:focus,
+a:focus,
+input[type=submit]:focus {
+  outline: 1px dotted #069 !important;
+}
+
+/*** Skip link ***/
+.skip-link {
+  position: absolute;
+  left: -999em;
+  top: -999em;
+}
+.skip-link:focus {
+  position: relative;
+  left: 0;
+  top: 0;
+}
+
+/* -------------------------------------- CONTENT HIGHLIGHT/SELECTION -- */
+::selection,
+::-moz-selection {
+  background: #005baa;
+  color: white;
+}
+
+/* -------------------------------------- SCROLLBAR -- */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #eaeaea;
+  border-left: 0 solid #cccccc;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: black;
+}
+
+/* -------------------------------------- REMOVE SPINNERS ON NUMBER FIELDS -- */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* hides the spin-button for firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/* ================================================================================
+
+								 # LAYOUT
+
+================================================================================ */
+.page {
+  background: #ccc;
+  padding-top: 60px;
+}
+
+.page__container {
+  background: #fff;
+}
+
+/* ================================================================================
+
+				            # KEYFRAME FUNCTIONS
+
+================================================================================ */
+/* ================================================================================
+
+								 # ANIMATIONS
+
+================================================================================ */
+/* ================================================================================
+
+				            # MODULES
+
+================================================================================ */
+/* -------------------------------------------- NAVIGATION */
+.nav-list, .nav-list--right {
+  /* ul */
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+}
+.nav-list--right {
+  /* ul */
+  text-align: right;
+}
+
+.nav-list__item {
+  /* li */
+  display: inline;
+  list-style-type: none;
+  margin-right: 40px;
+}
+
+.nav-list__link, .nav-list__link--right, .nav-list__link--menu {
+  /* a */
+  display: inline-block;
+  line-height: 50px;
+}
+.nav-list__link--right {
+  text-align: right;
+}
+.nav-list__link--menu {
+  display: none;
+}
+
+/*** Responsive state ***/
+@media screen and (max-width: 468px) {
+  .nav-list__item {
+    /* li */
+    display: block;
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .nav-list__link, .nav-list__link--right, .nav-list__link--menu {
+    /* a */
+    display: block;
+    line-height: 60px;
+    border-bottom: 1px solid #ddd;
+    padding: 0;
+  }
+  .nav-list__link--right {
+    text-align: center;
+  }
+  .nav-list__link--menu {
+    display: block;
+    text-align: center;
+  }
+
+  .js-responsive-menu-item {
+    display: none;
+  }
+}
+/* ================================================================================
+
+								 # HEADER
+
+================================================================================ */
+/* ================================================================================
+
+				            # SITE NAVIGATION
+
+================================================================================ */
+.primary-nav {
+  width: 100%;
+}
+
+/* ================================================================================
+
+								 # FOOTER
+
+================================================================================ */

@@ -1,0 +1,111 @@
+/* ================================================================================
+
+								 # BASE
+
+================================================================================ */
+
+
+
+
+
+/* -------------------------------------- DISPLAY LIST -- */
+
+header,
+section, 
+footer, 
+aside, 
+nav, 
+main, 
+article, 
+figure
+{ 
+	display: block; 
+}
+
+
+/* -------------------------------------- LINKS AND BUTTONS -- */
+
+
+/*** Default anchor ***/ 
+
+.content-link {
+	cursor: pointer;
+    @include anchors($colour-1, underline);
+    @include transition();
+    
+        &:hover,
+        &:focus {
+            color: $colour-hover;
+        }
+}
+
+
+
+/*** Button focus ***/
+
+button, 
+a,
+input[type=submit] {
+    &:focus {
+        outline: 1px dotted #069 !important;
+    }
+}
+
+
+
+/*** Skip link ***/
+
+.skip-link {
+	position:absolute;
+	left:-999em;
+	top:-999em;
+    
+        &:focus {
+            position:relative;
+            left:0;
+            top:0;
+        }
+}
+
+
+
+/* -------------------------------------- CONTENT HIGHLIGHT/SELECTION -- */
+
+::selection,
+::-moz-selection{
+    @include theme (#005BAA, #fff);
+}
+
+
+
+/* -------------------------------------- SCROLLBAR -- */
+
+::-webkit-scrollbar {
+	width:12px
+}
+::-webkit-scrollbar-track {
+	background-color: $colour-scrollbar-track;
+    @include border(border-left, 0 solid #ccc);
+}
+::-webkit-scrollbar-thumb {
+	background-color: #888;
+        &:hover {
+	       background-color: $colour-scrollbar-thumb;
+        }
+}
+
+
+
+/* -------------------------------------- REMOVE SPINNERS ON NUMBER FIELDS -- */
+
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none;
+  margin: 0; 
+}
+/* hides the spin-button for firefox */
+input[type=number] {
+    -moz-appearance:textfield;
+}
+

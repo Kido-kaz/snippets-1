@@ -1,0 +1,110 @@
+// ================================================================================
+
+								// # MIXINS
+
+// ================================================================================
+
+
+
+
+
+// -------------------------------------- HEPER MIXINS ***
+
+@mixin border ($border-name, $border-style, $padding-name : "", $padding-amount: "" ) {
+    #{$border-name}: $border-style;
+    #{$padding-name}: unquote($padding-amount);
+}
+
+
+@mixin gutters ($margin-name, $margin-amount, $padding-name, $padding-amount) {
+    #{$margin-name}:  $margin-amount;
+    #{$padding-name}: $padding-amount;
+}
+
+
+@mixin position ($position, $pos-name-1, $pos-amount-1, $pos-name-2, $pos-amount-2) {
+    position:       $position;
+    #{$pos-name-1}: $pos-amount-1;
+    #{$pos-name-2}: $pos-amount-2;
+}
+
+
+@mixin proportions ($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+
+@mixin anchors ($colour : $colour-1, $decoration : underline) {
+    color: $colour; 
+    text-decoration: $decoration;
+}
+
+
+@mixin theme ($background, $colour) {
+    background: $background;
+    color: $colour;
+}
+
+
+
+
+
+// -------------------------------------- VENDOR PREFIX MIXINS ***
+
+@mixin transform ($arg) {
+    -webkit-transform: $arg;
+            transform: $arg;
+}
+
+
+@mixin transition ($arg : all .3s ease-in-out) {
+    -webkit-transition: $arg;
+            transition: $arg;
+}
+
+
+@mixin boxShadow ($arg) {
+    -webkit-box-shadow: $arg;
+            box-shadow: $arg;
+}
+
+
+
+
+
+
+// -------------------------------------- ANIMATION MIXINS ***
+
+@mixin keyframes($name) {
+    @-webkit-keyframes #{$name} {
+        @content; 
+    }
+    
+    @-moz-keyframes #{$name} {
+        @content;
+    }
+    
+    @-ms-keyframes #{$name} {
+        @content;
+    }
+    
+    @keyframes #{$name} {
+        @content;
+    } 
+}
+
+@mixin animation ($arg) {
+    -webkit-animation: $arg;
+       -moz-animation: $arg;
+         -o-animation: $arg;
+            animation: $arg;
+}
+
+
+@mixin animationDelay ($amount) {
+    -webkit-animation-delay: $amount;
+       -moz-animation-delay: $amount;
+         -o-animation-delay: $amount;
+            animation-delay: $amount;
+}
