@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Center Vertical and Horizontal</title>
+
+<style type="text/css">
+	body, html {
+		padding: 0;
+		margin: 0;
+		font: 14px/14px Arial, Verdana;
+	}
+	
+	.box-wrapper .box.is-Variable {
+	  display: table;
+	  height: auto;
+	  background: #069
+	}
+	
+	.box, .box__text {
+		height: 50%;
+		width: 50%;
+		overflow: auto;
+		margin: auto;
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+	}
+	.box {
+		background: #111;	
+	}
+	.box__text {
+		color: #eee;
+		padding: 20px;
+	}
+	h1 {
+		margin-top: 0
+	}
+	p, h1 {
+		line-height: 1.5em
+	}
+	
+
+	
+</style>
+</head>
+
+    <body>
+        <div class="box-wrapper">
+            <div class="box">
+                <div class="box__text">
+                    <h1>The parent box is in the center</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id pellentesque dui. Maecenas varius dapibus est, a congue urna lobortis nec. Morbi bibendum diam augue, eget placerat odio consectetur vitae. Nunc venenatis purus vitae tellus dignissim, ac vehicula ante commodo. In posuere sapien vitae sapien condimentum, in blandit quam varius. Morbi quis erat a mi adipiscing sollicitudin id sit amet nibh. Nulla facilisi. Etiam semper neque a tincidunt dictum. </p>
+            </div><!-- /box__text -->
+        </div><!-- /box -->
+        </div><!-- /box-wrapper -->
+    
+    </body>
+</html>
