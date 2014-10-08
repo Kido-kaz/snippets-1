@@ -7,7 +7,7 @@ $(document).ready( function() {
     ==================================================================================== */
 
 
-    // Navigate to certain sections on the page, based on the data-rel attribute
+    // Navigate to certain sections on the page, based on the data-rel attribute.
 
     $(".js-section-nav").click(function(e) {
         e.preventDefault();
@@ -27,8 +27,8 @@ $(document).ready( function() {
     ==================================================================================== */
 
 
-    var distance = $("#js-section-1").offset().top, $window = $(window);
-    var firstSection = $("#js-section-1").height();
+    var distance = $("#js_section_1").offset().top, $window = $(window);
+    var firstSection = $("#js_section_1").height();
     var anim = 500;
 
 
