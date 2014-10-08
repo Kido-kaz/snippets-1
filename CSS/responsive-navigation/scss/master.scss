@@ -5,16 +5,6 @@
 // ================================================================================
 
 @import 'partials/variables';
-@import 'partials/mixins';
 @import 'partials/breakpoints';
-@import 'partials/fonts';
-@import 'partials/base';
 @import 'partials/layout';
-@import 'partials/keyframes';
-@import 'partials/animations';
-@import 'partials/modules';
-
-
-@import 'modules/header';
-@import 'modules/primary-navigation';
-@import 'modules/footer';
+@import 'partials/navigation';

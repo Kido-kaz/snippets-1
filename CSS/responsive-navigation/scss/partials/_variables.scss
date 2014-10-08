@@ -1,12 +1,17 @@
 // ================================================================================
 
-								// # ALL VARIABLES
+				// # ALL VARIABLES
 
 // ================================================================================
 
 
 
+// -------------------------------------- MEDIA QUERY BREAKPOINTS ***
 
-
-@import '../variables/theme-1';                 // Switch out for different theme/colour scheme
-@import '../variables/global-variables';        // Main global variables
+$break-lg             :	1200px;
+$break-md             :	992px;
+$break-sm             :	768px;
+$break-xs             :	600px;
+$break-xxs            :	599px;
+$break-low-res-w      : 1366px;
+$break-low-res-h      : 768px;
