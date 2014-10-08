@@ -1,0 +1,19 @@
+/**
+ * This stylesheet is needed for the
+ * functionality of the loading to work
+*/
+
+.wrapper {
+    position: relative;
+}
+.position {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.js-show-img {
+    display: block;
+}
+.js-hide-img {
+    display: none;
+}

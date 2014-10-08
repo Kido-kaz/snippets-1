@@ -11,17 +11,13 @@
     </head>
     <body>
 
-        <section class="section full-height" id="js-section-1">
-            <p class="text-center"><button type="button" data-rel="js-section-2" class="cta js-section-nav">Scroll to section</button></p>
-        </section>
-
-        <section class="section full-height" id="js-section-2">
-            <p class="text-center"><button type="button" class="cta" id="js_to_the_top">Scroll to top</button></p>
-        </section>
-
+        <div class="wrapper">
+            <img class="js-loader-img position" src="path/to/loading-placeholder-image" id="js_image_1" alt="Our way" data-rel="">
+            <img class="js-main-img position js-hide-img" src="path/to/main/image-to-display" alt="something" data-rel="js_image_1">
+        </div>
 
 
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <script src="scroll-to-section.js"></script>
+        <script src="loading-image.js"></script>
     </body>
 </html>
